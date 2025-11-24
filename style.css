@@ -66,10 +66,10 @@ nav ul li a:hover::after {
 }
 .header-text {
   margin-top: 20%;
-  font-size: 30px; /*30px*/
+  font-size: 1.8rem; /*30px*/
 }
 .header-text h1 {
-  font-size: 60px;
+  font-size: 2.4rem; /*30px*/
   margin-top: 20px;
 }
 .header-text h1 span {
@@ -99,7 +99,7 @@ nav ul li a:hover::after {
   flex-basis: 60%;
 }
 .sub-title {
-  font-size: 60px;
+  font-size: 3.5rem; /*30px*/
   font-weight: 600;
   color: white;
 }
