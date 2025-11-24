@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Free CDN -->
+  <script src="https://kit.fontawesome.com/5c48865401.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/now.jpg" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Internships</a></li>
+          <li><a href="#portfolio">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Software Developer</p>
+        <h1>Hi, I'm <span>N Sandhiya</span><br />Coding Solutions, <br /> Crafting Experiences</h1>
+      </div>
+    </div>
+  </div>
+  <!--About-->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/purpleabout.jpg" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Hi, I’m Sandhiya Nagaraj! I’m a B.Tech Information Technology graduate and an aspiring software developer. I
+            love creating clean, efficient, and interactive web applications using Java, HTML, CSS, JavaScript, React Js
+            and frameworks like Spring Boot.
+            <br>
+            <br>
+            I enjoy turning ideas into real, working projects and learning new technologies along the way. My focus is
+            on building user-friendly solutions while continuously improving my skills. On this portfolio, you’ll find
+            some of the projects I’ve worked on and the technologies I’m passionate about.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-links" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('internship')">
+              Certification
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Programming Languages:</span><br />
+                Java , Python
+              </li>
+              <li><span>Frameworks & Libraries:</span><br />Spring Boot, Spring Data JPA</li>
+              <li>
+              <li><span>Web Technologies and Framework :</span><br />HTML CSS JavaScript and React.Js</li>
+              <li>
+                <span>Database Management:</span><br />Managing and querying data with SQL
+              </li>
+              <li>
+                <span>Tools:</span><br />Neo4j (for Knowledge Graph project), Postman, GitHub
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="internship">
+            <ul>
+              <li>
+
+                <span>Java Training <br />Besant Technologies | April 2025</span><br />
+                Completed practical Java training, gaining hands-on experience in core Java concepts.
+              </li>
+              <li><span>Java FullStack<br />
+                  Teknoturf Info Services Pvt Ltd | February 2025</span><br />Acquired hands-on development skills in
+                full-stack Java development, including front-end and back-end integration.</li>
+
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>Passed Out-2025</span><br />
+                B.Tech in Information Technology from Meenakshi Sundararajan Engineering College. <br /><b>Cgpa
+                  :</b>8.58
+              </li>
+              <li><span>Passed Out-2021</span><br />HSC from Anna Adarsh Matriculation Higher Secondary School.
+                <br /><b>Percentage :</b>92
+              </li>
+              <li>
+                <span>Passed Out-2019</span><br />SSLC from Bharathi Matriculation Higher Secondary School.
+                <br /><b>Percentage :</b>88.88
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----------------Services--------------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">Internships</h1>
+
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>Web Development</h2>
+          <h3><span>Codebind Technologies - Chennai | March 2023</span></h3><br>
+          <p>
+            Developed and styled web pages using frontend technologies.
+            Created responsive layouts to improve user interface design.
+            Gained practical hands-on experience in web development and user-centric design.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Java Programming</h2>
+          <h3><span>Pantech E-Learning – Chennai | August 2023</span></h3><br>
+          <p>
+            Developed Java applications using OOP concepts.
+
+            Enhanced programming logic and problem-solving skills through exercises and mini-projects.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Tech Development</h2>
+          <h3><span>AICL Learning Simplified – Chennai | July 2024</span></h3><br>
+          <p>
+            Contributed to designing and implementing new features for an existing application.
+
+            Leveraged knowledge of Java, SQL, and web technologies to improve application functionality.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------portfolio-------------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Project</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/Stumanage.jpg" />
+          <div class="layer">
+            <h3>Student Management System</h3><br>
+            <span>Technologies: Java, Spring Boot, Spring Data JPA, MySQL</span><br />
+            <p>
+              Built a web application to manage student records with CRUD functionality. Implemented Spring Boot for
+              development, Spring Data JPA for database operations, and MySQL for data storage.
+            </p>
+            <a href="https://github.com/Sandhiyaa25/sms-springboot"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/digital.jpg" />
+          <div class="layer">
+            <h3>Signature Authentication Application for Secure Access</h3><br>
+            <span>Technologies: Python, OpenCV, SQL</span><br />
+            <p>
+              Developed a system that verifies handwritten signatures by extracting key image features and matching them
+              with stored templates in an SQL database for secure authentication.
+            </p>
+            <a href="https://github.com/sandhiyaa25"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/kg1.jpg" />
+          <div class="layer">
+            <h3>Agriculture Knowledge Graph Analysis System using GCN</h3><br>
+            <span>Technologies: Python, GCN, Neo4j, NetworkX</span><br />
+            <p>
+              Processed TTL files and trained a GCN model to improve relation understanding. Enhanced link prediction
+              and visualized the structured graph using Neo4j for better insights.
+            </p>
+            <a href="https://github.com/sandhiyaa25"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+       
+        
+        <div class="work">
+          <img src="images/weather.jpeg" />
+          <div class="layer">
+            <h3>Real-Time Weather Forecast Application</h3><br>
+            <span>Technologies: React.Js , CSS , API</span><br />
+            <p>
+              A responsive web app showing live weather updates with temperature, humidity, and wind speed. Features a
+              dynamic background that changes with the current weather for an engaging experience.
+            </p>
+            <a href="https://weather-now-brown-gamma.vercel.app/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/portt.jpeg" />
+          <div class="layer">
+            <h3>Personal Portfolio Website</h3><br>
+            <span>Technologies: HTML, CSS, JavaScript</span><br />
+            <p>
+              Developed a responsive personal portfolio website to showcase my skills, projects, and contact
+              information. Features an interactive design and professional layout, demonstrating web development and
+              UI/UX skills.
+            </p>
+            <a href="https://github.com/sandhiyaa25"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!---------------Contact-------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact me</h1>
+          <p><i class="fa-solid fa-envelope"></i>
+  <a href="mailto:ssandhiya774@gmail.com">ssandhiya774@gmail.com</a>
+   </p>
+
+          <p>
+  <i class="fa-solid fa-phone"></i>
+  <a href="tel:+916382935051">+91 6382935051</a>
+</p>
+
+          <div class="social-icons">
+           <a href="https://github.com/sandhiyaa25"><i class="fab fa-github"></i> sandhiyaa25</a>
+          </div>
+          <a href="images/N.Sandhiya_Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="text" name="email" placeholder="Your email" required />
+            <textarea name="Message" rows="6" placeholder="Enter Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright © 2025 Sandhiya Nagaraj | Built with<i class="fa-solid fa-heart"></i> Portfolio
+      </p>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-links");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-links");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemeu.style.right = "0";
+    }
+    function closemenu() {
+      sidemeu.style.right = "-200px";
+    }
+  </script>
+
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbyUt5dPF06JryCNDp_k4jvgBCr4c0GWmY_AAZOjNZG5I_7IlQKfiBOcykFanZMZFDYGqQ/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const msg = document.getElementById("msg");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          msg.innerHTML = "Message sent successfully";
+          setTimeout(function () {
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+</body>
+
+</html>
